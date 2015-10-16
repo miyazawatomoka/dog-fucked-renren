@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "dog fucked renren",
+  "description": "del status and share of your renren",
+  "version": "1.0",
+
+  "permissions": [
+    "https://secure.flickr.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://share.renren.com/share/v7/*"],
+      "js": ["share.js"]
+    },
+    {
+      "matches": ["http://status.renren.com/status/v7/*"],
+      "js": ["status.js"]
+    }
+  ]
+  
+}
